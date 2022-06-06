@@ -1,0 +1,20 @@
+div.travel-artical-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section{
+        margin-left: 100px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    p{
+        width: 300px;
+    }
+    img{
+        width: 300px;
+    }
+}

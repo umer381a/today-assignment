@@ -1,0 +1,89 @@
+@import '$src/Assets/mixins';
+
+.blog-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  section.travel-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    h4.blog-heading {
+      @include pragraphStyles();
+      font-size: 28px;
+      font-weight: 500px;
+    }
+    div.blog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 449px;
+    }
+    p.blog-paragraph {
+      @include pragraphStyles();
+      font-size: 18px;
+      font-weight: 400px;
+    }
+    p.author {
+      @include pragraphStyles();
+      font-weight: bold;
+      font-size: 12px;
+    }
+    img {
+      margin-top: 10px;
+      width: 647px;
+      height: 526px;
+    }
+  }
+  section.dine-section {
+    margin: 0px 20px;
+    flex: 1;
+    div.title {
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    img.dine {
+      margin-top: 40px;
+    }
+    p.author {
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  section.open-house-section {
+    flex: 1;
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    p.author {
+      font-weight: bold;
+      font-size: 12px;
+    }
+    img.open-house {
+      height: 280px;
+      margin-bottom: 30px;
+    }
+    div.title {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//catagore component style
+div.title {
+  @include titleStyles();
+  margin-top: 10px;
+}
+body.darkmode {
+  div {
+    p {
+      background-color: #3d3d3d;
+      color: var(--whiteColor);
+    }
+  }
+}

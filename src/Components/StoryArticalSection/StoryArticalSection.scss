@@ -1,0 +1,26 @@
+@import '$src/Assets/mixins';
+
+div.story-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--skinColor);
+
+    section.half-full-section{
+        flex: 1;
+        margin: 50px;
+    }
+
+    section.glass-Section{
+        flex: 1;
+        margin-right: 50px;
+    }
+    
+    section.half-empty-section{
+        flex: 1;
+    }
+    
+    p.blog{
+        @include blog();
+    }
+}

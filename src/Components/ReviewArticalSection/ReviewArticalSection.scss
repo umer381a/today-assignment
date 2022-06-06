@@ -1,0 +1,20 @@
+div.review{
+    background-color: var(--skinColor);
+    display: flex;
+    padding: 30px;
+    section.tea-artical-seciton{
+        flex: 1;
+    }
+    section.juse-artical-section{
+        flex: 1;
+    }
+    section.drink-artical-section{
+        flex: 1;
+    }
+    section.coffee-artical-section{
+        flex: 1;
+    }
+    img{
+        width: 250px;
+    }
+}

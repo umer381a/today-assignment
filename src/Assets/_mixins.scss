@@ -1,0 +1,40 @@
+@import 'variables';
+
+@mixin titleStyles {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $TitleFont;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+}
+@mixin pragraphStyles {
+  width: 500px;
+  margin-top: 25px;
+  font-family: $ArticalFont;
+  line-height: 127%;
+  text-align: center;
+  color: var(--blackColor);
+}
+@mixin headingStyles {
+  font-family: $TitleFont;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@mixin blog {
+  width: 300px;
+  font-family: "$ArticalFont";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 127%;
+  color: var(--blackColor);
+}
+
